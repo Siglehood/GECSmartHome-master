@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:gravity="center_horizontal"
+        android:text="@string/stepmotortitle"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_forward"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_btn_forward"
+            android:gravity="center_horizontal"
+            android:text="@string/stepmotorforwardBtn"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/btn_backward"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_btn_backward"
+            android:gravity="center_horizontal"
+            android:paddingEnd="0dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="0dp"
+            android:paddingStart="20dp"
+            android:text="@string/stepmotorbackwardBtn"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+</LinearLayout>

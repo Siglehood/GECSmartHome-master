@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="false"
+    android:orientation="vertical" >
+
+    <SurfaceView
+        android:id="@+id/myPreview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="false" >
+    </SurfaceView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="10dp"
+        android:baselineAligned="true"
+        android:focusable="false" >
+
+        <ImageButton
+            android:id="@+id/btn_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@null"
+            android:contentDescription="@null"
+            android:focusable="true"
+            android:src="@drawable/selector_btn_video" />
+
+        <ImageView
+            android:id="@+id/imgV_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:contentDescription="@null"
+            android:src="@drawable/green_1" />
+
+        <ImageButton
+            android:id="@+id/btn_stopRecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:contentDescription="@null"
+            android:src="@drawable/selector_btn_stop" />
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ExpandableListView
+        android:id="@+id/elv_menu"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:cacheColorHint="@color/transparent"
+        android:childDivider="@drawable/list_divider"
+        android:childIndicator="@null"
+        android:dividerHeight="1dp"
+        android:groupIndicator="@null"
+        android:listSelector="#00BFFF"
+        android:scrollbars="@null" />
+
+</LinearLayout>

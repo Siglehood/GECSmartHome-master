@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.gec.smarthome.widget.SnTitleBar
+        android:id="@+id/sn_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/r_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:visibility="invisible" >
+
+        <com.gec.smarthome.widget.SnHorizontalProgressBar
+            android:id="@+id/progress_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/tv_progress_val"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/white"
+            android:textSize="25sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/pause"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@null"
+                android:button="@null"
+                android:drawableTop="@drawable/selector_btn_pause"
+                android:gravity="center_horizontal"
+                android:text="@string/pause"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/continues"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:button="@null"
+                android:drawableTop="@drawable/selector_btn_continue"
+                android:gravity="center_horizontal"
+                android:text="@string/continues"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/start"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="100dp"
+                android:layout_marginRight="100dp"
+                android:background="@null"
+                android:button="@null"
+                android:drawableTop="@drawable/selector_btn_start"
+                android:gravity="center_horizontal"
+                android:text="@string/start"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/stop"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:button="@null"
+                android:drawableTop="@drawable/selector_btn_stop"
+                android:gravity="center_horizontal"
+                android:text="@string/stop"
+                android:textSize="25sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

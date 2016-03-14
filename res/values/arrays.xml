@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="titles">
+        <item>灯光控制</item>
+        <item>空调控制</item>
+        <item>窗帘控制</item>
+        <item>蜂鸣器控制</item>
+        <item>烟雾监测</item>
+        <item>温湿度监测</item>
+        <item>读卡</item>
+        <item>电话</item>
+    </string-array>
+
+</resources>
